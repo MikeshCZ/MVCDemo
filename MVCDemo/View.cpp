@@ -1,5 +1,7 @@
 #include "View.h"
 
+View::View() {}
+
 int View::AskForNumber()
 {
     int number = 0;

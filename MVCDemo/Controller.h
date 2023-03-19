@@ -8,7 +8,7 @@ class Controller
 {
 public:
     Controller(Model &model, View &view);
-    void AskForNumber();
+    void DefineNumber();
     void SetNumber(int data);
     int GetNumber();
     void UpdateView() const;

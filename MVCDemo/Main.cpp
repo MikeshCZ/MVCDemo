@@ -14,14 +14,17 @@ int main() {
     View* view = new View();
     Controller* controller = new Controller(*model,*view);
 
+    controller->UpdateView("***=====~~~~~----- Welcome on Console MVC Demo -----~~~~~=====***");
     controller->UpdateView("Please set intiger number. If you want to exit se number to 0.");
 
     do
     {
-        controller->AskForNumber();
+        controller->DefineNumber();
         controller->UpdateView();
+        controller->UpdateView("-----------------------------------------------------------------");
     } while (controller->GetNumber() != 0);
     
+    controller->UpdateView("***=====~~~~~---------------------------------------~~~~~=====***");
     delete model;
     delete view;
     delete controller;

@@ -11,6 +11,7 @@ using std::endl;
 class View 
 {
 public:
+    View();
     int AskForNumber();
     void DisplayNumber(int number) const;
     void DisplayText(string text) const;
